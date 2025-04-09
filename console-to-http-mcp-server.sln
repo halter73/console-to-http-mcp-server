@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.35906.104
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console-to-http-mcp-server", "console-to-http-mcp-server.csproj", "{8287E39F-4720-4986-9A60-4289D21F7796}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8287E39F-4720-4986-9A60-4289D21F7796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8287E39F-4720-4986-9A60-4289D21F7796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8287E39F-4720-4986-9A60-4289D21F7796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8287E39F-4720-4986-9A60-4289D21F7796}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {649A33FC-B826-4ECB-9D6F-A43B2B975756}
+	EndGlobalSection
+EndGlobal
