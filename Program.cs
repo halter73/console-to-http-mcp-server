@@ -1,20 +1,21 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using ModelContextProtocol.Server;
+﻿using ModelContextProtocol.Server;
 using System.ComponentModel;
 
-var builder = Host.CreateApplicationBuilder(args);
-builder.Logging.AddConsole(consoleLogOptions =>
+var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.ConfigureKestrel(options =>
 {
-    // Configure all logs to go to stderr
-    consoleLogOptions.LogToStandardErrorThreshold = LogLevel.Trace;
+    // Set the port for the server to listen on
+    options.ListenLocalhost(3001);
 });
 builder.Services
     .AddMcpServer()
-    .WithStdioServerTransport()
     .WithToolsFromAssembly();
-await builder.Build().RunAsync();
+
+var app = builder.Build();
+
+app.MapMcp();
+
+app.Run();
 
 [McpServerToolType]
 public static class EchoTool
