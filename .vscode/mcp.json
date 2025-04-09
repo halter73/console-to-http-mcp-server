@@ -1,6 +1,6 @@
 {
   "servers": {
-    "my-remote-server": {
+    "my-local-server": {
       "type": "sse",
       "url": "http://localhost:3001/sse",
     }
